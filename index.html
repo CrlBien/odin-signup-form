@@ -3,69 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <main class="main-container">
-      <section class="form-container"></section>
-      <div>
-        <h1>Sign up</h1>
-        <span>Come and learn with us!</span>
-      </div>
+      <section class="form-container">
+        <div>
+          <h1>Sign up</h1>
+          <span>Come and learn with us!</span>
+        </div>
 
-      <form action="" method="">
-        <div class="name-container">
+        <form action="" method="">
+          <div class="name-container">
+            <div class="input-container">
+              <label for="first-name"></label>
+              <input
+                id="first-name"
+                type="text"
+                placeholder="First name"
+                required
+              />
+            </div>
+            <div class="input-container">
+              <label for="last-name"></label>
+              <input
+                id="last-name"
+                type="text"
+                placeholder="Last name"
+                required
+              />
+            </div>
+          </div>
           <div class="input-container">
-            <label for="first-name"></label>
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="Email" required />
+          </div>
+          <div class="input-container">
+            <label for="password"></label>
+            <input id="email" type="password" placeholder="Password" required />
+          </div>
+          <div class="input-container">
+            <label for="confirm-password"></label>
             <input
-              id="first-name"
+              id="confirm-password"
               type="text"
-              placeholder="First name"
+              placeholder="Confirm password"
               required
             />
           </div>
-          <div class="input-container">
-            <label for="last-name"></label>
-            <input
-              id="last-name"
-              type="text"
-              placeholder="Last name"
-              required
-            />
-          </div>
-        </div>
-        <div class="input-container">
-          <label for="email"></label>
-          <input id="email" type="email" placeholder="Email" required />
-        </div>
-        <div class="input-container">
-          <label for="password"></label>
-          <input id="email" type="password" placeholder="Password" required />
-        </div>
-        <div class="input-container">
-          <label for="confirm-password"></label>
-          <input
-            id="confirm-password"
-            type="text"
-            placeholder="Confirm password"
-            required
-          />
-        </div>
 
-        <div class="social-container">
-          <button type="button" class="icon-btn">
-            <img src="social-icon/google-icon.svg" alt="google" />
-          </button>
-          <button type="button" class="icon-btn">
-            <img src="social-icon/facebook-icon.svg" alt="facebook" />
-            </button type="button" class="icon-btn">
-            <button>
-                <img src="social-icon/x-icon.svg" alt="x" />
+          <div class="divider">
+            <span class="line"
+              ><span class="alternative-text">or sign up with</span></span
+            >
+          </div>
+
+          <div class="social-container">
+            <button type="button" class="social-btn" id="google-btn">
+              <img
+                src="assets/social-icon/google-icon.svg"
+                class="social-img"
+                alt="google"
+              />
             </button>
-        </div>
-      </form>
+            <button type="button" class="social-btn" id="facebook-btn">
+              <img
+                src="assets/social-icon/facebook-icon.svg"
+                class="social-img"
+                alt="facebook"
+              />
+            </button>
+            <button type="button" class="social-btn" id="x-btn">
+              <img
+                src="assets/social-icon/x-icon.svg"
+                class="social-img"
+                alt="x"
+              />
+            </button>
+          </div>
 
-      <section class="img-container"></section>
+          <div class="sign-up-btn-container">
+            <button type="submit" class="submit-btn" id="sign-up-btn">
+              Sign Up
+            </button>
+          </div>
+        </form>
+
+        <p class="question">
+          Already have an account?
+          <span class="login-link"><a href="">Log in</a></span>
+        </p>
+      </section>
+
+      <section class="img-container">
+        <img src="assets/Online learning-amico.svg" alt="online-learning" />
+      </section>
     </main>
   </body>
 </html>
