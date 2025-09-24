@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #2563eb;
+  --primary-color: #f35640;
   --secondary-color: #ffffff;
   --card-bg-color: #ffffff;
-  --background-gradient: linear-gradient(90deg, #2563eb, #ffffff);
+  --background-page: #f3f4f6;
   --font-color: #111827;
   --font-main: "Quicksand", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif;
@@ -16,29 +16,19 @@
   font-family: var(--font-main);
 }
 
+html,
 body {
-  border: 1px solid black;
-  background-color: var(--background-gradient);
-}
-
-main {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  max-width: 700px;
-  height: 50vh;
-  margin: 0 auto;
+  height: 100%;
 }
 
 .social-container {
   display: flex;
-  width: 100px;
+  gap: 0.5rem;
 }
 
 .social-btn {
-  width: 50px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .social-img {

@@ -42,60 +42,77 @@
             </div>
           </div>
           <div class="input-container">
+            <label for="phone-num"></label>
+            <input
+              id="phone-num"
+              type="email"
+              placeholder="Phone number"
+              required
+            />
+          </div>
+          <div class="input-container">
             <label for="email"></label>
             <input id="email" type="email" placeholder="Email" required />
           </div>
           <div class="input-container">
             <label for="password"></label>
-            <input id="email" type="password" placeholder="Password" required />
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
           </div>
           <div class="input-container">
             <label for="confirm-password"></label>
             <input
               id="confirm-password"
-              type="text"
+              type="password"
               placeholder="Confirm password"
               required
             />
           </div>
 
-          <div class="divider">
-            <span class="line"
-              ><span class="alternative-text">or sign up with</span></span
-            >
-          </div>
-
-          <div class="social-container">
-            <button type="button" class="social-btn" id="google-btn">
-              <img
-                src="assets/social-icon/google-icon.svg"
-                class="social-img"
-                alt="google"
-              />
-            </button>
-            <button type="button" class="social-btn" id="facebook-btn">
-              <img
-                src="assets/social-icon/facebook-icon.svg"
-                class="social-img"
-                alt="facebook"
-              />
-            </button>
-            <button type="button" class="social-btn" id="x-btn">
-              <img
-                src="assets/social-icon/x-icon.svg"
-                class="social-img"
-                alt="x"
-              />
-            </button>
-          </div>
-
           <div class="sign-up-btn-container">
-            <button type="submit" class="submit-btn" id="sign-up-btn">
-              Sign Up
-            </button>
-          </div>
-        </form>
+          <button type="submit" class="submit-btn" id="sign-up-btn">
+            Sign Up
+          </button>
+        </div>
+        </form> 
+      </section>
 
+      <section class="signup-option-container">
+        <div class="divider">
+          <span class="line"
+            ><span class="alternative-text">or sign up with</span></span
+          >
+        </div>
+
+        <div class="social-container">
+          <button type="button" class="social-btn" id="google-btn">
+            <img
+              src="assets/social-icon/google-icon.svg"
+              class="social-img"
+              alt="google"
+            />
+          </button>
+          <button type="button" class="social-btn" id="facebook-btn">
+            <img
+              src="assets/social-icon/facebook-icon.svg"
+              class="social-img"
+              alt="facebook"
+            />
+          </button>
+          <button type="button" class="social-btn" id="x-btn">
+            <img
+              src="assets/social-icon/x-icon.svg"
+              class="social-img"
+              alt="x"
+            />
+          </button>
+        </div>
+
+      <section class="login-link-container">
         <p class="question">
           Already have an account?
           <span class="login-link"><a href="">Log in</a></span>
@@ -103,7 +120,11 @@
       </section>
 
       <section class="img-container">
-        <img src="assets/Online learning-amico.svg" alt="online-learning" />
+        <img
+          src="assets/Online learning-amico.svg"
+          class="learning-img"
+          alt="online-learning"
+        />
       </section>
     </main>
   </body>
