@@ -33,7 +33,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  width: 100%;
+  max-width: 90%;
   gap: clamp(0.3rem, 1vw, 1rem);
   padding: clamp(0.5rem, 2vw, 1.5rem);
   border-radius: 0.25rem;
@@ -43,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 .logo-name-container {
@@ -52,7 +54,7 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 90%;
   gap: clamp(0.3rem, 1vw, 0.8rem);
 }
 
@@ -63,22 +65,24 @@ body {
 }
 
 .signup-msg-container h1 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: bolder;
 }
 
 .signup-msg-container span {
-  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: clamp(0.2rem, 0.5vw, 0.6rem);
 }
 
 .input-container {
-  width: 100%;
+  width: 90%;
 }
 
 input {
@@ -112,11 +116,11 @@ button {
 .submit-btn {
   border: none;
   border-radius: 2px;
-  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(2.5rem, 6vw, 4.5rem);
+  padding: clamp(0.6rem, 1vw, 1rem) clamp(4rem, 6vw, 5rem);
   background: var(--bright-red);
   color: var(--white);
   font-weight: bold;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  font-size: clamp(0.9rem, 1vw, 1.5rem);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -129,7 +133,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  font-size: clamp(1rem, 1vw, 1.3rem);
   margin: clamp(0.8rem, 2vw, 1.2rem) 0;
 }
 
@@ -149,8 +153,8 @@ button {
 }
 
 .social-btn {
-  width: clamp(2rem, 5vw, 2.5rem);
-  height: clamp(2rem, 5vw, 2.5rem);
+  width: clamp(2.5rem, 5vw, 3rem);
+  height: clamp(2.5rem, 5vw, 3rem);
   border: 1px solid var(--white);
   background-color: var(--white);
   border-radius: 100%;
@@ -165,8 +169,12 @@ button {
   width: 100%;
 }
 
+.login-link-container {
+  width: 100%;
+}
+
 .login-link-container p {
-  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .login-link a {
@@ -179,7 +187,7 @@ button {
 }
 
 /* Responsive */
-@media (min-width: 768px) {
+@media (min-width: 425px) {
   body {
     align-items: center;
     background: var(--pale-blue-gray);
@@ -197,6 +205,10 @@ button {
   .logo-name-container {
     margin-top: 0;
   }
+
+  .input-container {
+    max-width: 70%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -208,10 +220,6 @@ button {
 
   .signup-container {
     width: clamp(35%, 40%, 45%);
-  }
-
-  .signup-msg-container {
-    align-items: baseline;
   }
 
   .img-container {
