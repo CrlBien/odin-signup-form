@@ -54,7 +54,7 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   gap: clamp(0.3rem, 1vw, 0.8rem);
 }
 
@@ -65,12 +65,12 @@ body {
 }
 
 .signup-msg-container h1 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(2.5rem, 3vw, 3rem);
   font-weight: bolder;
 }
 
 .signup-msg-container span {
-  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 form {
@@ -78,7 +78,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(0.2rem, 0.5vw, 0.6rem);
+  gap: clamp(0.4rem, 0.5vw, 0.6rem);
 }
 
 .input-container {
@@ -116,7 +116,7 @@ button {
 .submit-btn {
   border: none;
   border-radius: 2px;
-  padding: clamp(0.6rem, 1vw, 1rem) clamp(4rem, 6vw, 5rem);
+  padding: clamp(0.8rem, 1vw, 1rem) clamp(4rem, 6vw, 5rem);
   background: var(--bright-red);
   color: var(--white);
   font-weight: bold;
@@ -153,14 +153,13 @@ button {
 }
 
 .social-btn {
-  width: clamp(2.5rem, 5vw, 3rem);
-  height: clamp(2.5rem, 5vw, 3rem);
+  width: clamp(2.8rem, 5vw, 3.3rem);
+  height: clamp(2.8rem, 5vw, 3.3rem);
   border: 1px solid var(--white);
   background-color: var(--white);
   border-radius: 100%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
-
 .social-btn:hover {
   transform: scale(1.15);
 }
@@ -174,7 +173,7 @@ button {
 }
 
 .login-link-container p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .login-link a {
