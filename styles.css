@@ -70,7 +70,7 @@ body {
 }
 
 .signup-msg-container span {
-  font-size: clamp(1rem, 2vw, 1.7rem);
+  font-size: clamp(0.7rem, 2vw, 1.3rem);
 }
 
 form {
