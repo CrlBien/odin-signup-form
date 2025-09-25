@@ -10,103 +10,100 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="/assets/eduk-logo.svg">
     <title>Eduk.</title>
   </head>
   <body>
     <main class="main-container">
-      <section class="logo-name-container">
-        <img src="assets\eduk-logo.svg" alt="eduk-logo">
-        <h1>Eduk.</h1>
-      </section>
+      <div class="signup-container">
+        <section class="logo-name-container">
+        <img src="assets\eduk-logo-name.svg" alt="eduk-logo">
+        </section>
+        <section class="form-container">
+          <div class="signup-msg-container">
+            <h1>Sign up</h1>
+            <span>Come and learn with us!</span>
+          </div>
 
-      <section class="form-container">
-        <div>
-          <h2>Sign up</h2>
-          <span>Come and learn with us!</span>
-        </div>
-
-        <form action="" method="">
-          <div class="name-container">
+          <form action="" method="">
             <div class="input-container">
-              <label for="full-name"></label>
+                <label for="full-name"></label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Full name"
+                  required
+                />
+            </div>
+            <div class="input-container">
+              <label for="email"></label>
+              <input id="email" type="email" placeholder="Email" required />
+            </div>
+            <div class="input-container">
+              <label for="password"></label>
               <input
-                id="full-name"
-                type="text"
-                placeholder="Full name"
+                id="password"
+                type="password"
+                placeholder="Password"
                 required
               />
             </div>
+            <div class="input-container">
+              <label for="confirm-password"></label>
+              <input
+                id="confirm-password"
+                type="password"
+                placeholder="Confirm password"
+                required
+              />
+            </div>
+
+            <div class="signup-btn-container">
+            <button type="submit" class="submit-btn" id="sign-up-btn">
+              Sign Up
+            </button>
           </div>
-          <div class="input-container">
-            <label for="email"></label>
-            <input id="email" type="email" placeholder="Email" required />
+          </form> 
+        </section>
+
+        <section class="divider-container">or sign up with</section>
+
+        <section class="signup-option-container">
+          <div class="social-container">
+            <button type="button" class="social-btn" id="google-btn">
+              <img
+                src="assets/social-icon/google-icon.svg"
+                class="social-img"
+                alt="google"
+              />
+            </button>
+            <button type="button" class="social-btn" id="facebook-btn">
+              <img
+                src="assets/social-icon/facebook-icon.svg"
+                class="social-img"
+                alt="facebook"
+              />
+            </button>
+            <button type="button" class="social-btn" id="x-btn">
+              <img
+                src="assets/social-icon/x-icon.svg"
+                class="social-img"
+                alt="x"
+              />
+            </button>
           </div>
-          <div class="input-container">
-            <label for="password"></label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="input-container">
-            <label for="confirm-password"></label>
-            <input
-              id="confirm-password"
-              type="password"
-              placeholder="Confirm password"
-              required
-            />
-          </div>
 
-          <div class="sign-up-btn-container">
-          <button type="submit" class="submit-btn" id="sign-up-btn">
-            Sign Up
-          </button>
-        </div>
-        </form> 
-      </section>
+        <section class="login-link-container">
+          <p class="question">
+            Already have an account?
+            <span class="login-link"><a href="">Log in</a></span>
+          </p>
+        </section>
+      </div>
 
-      <section class="signup-option-container">
-        <div class="divider">
-          <span class="line"><span class="alternative-text">or sign up with</span></span>
-        </div>
-
-        <div class="social-container">
-          <button type="button" class="social-btn" id="google-btn">
-            <img
-              src="assets/social-icon/google-icon.svg"
-              class="social-img"
-              alt="google"
-            />
-          </button>
-          <button type="button" class="social-btn" id="facebook-btn">
-            <img
-              src="assets/social-icon/facebook-icon.svg"
-              class="social-img"
-              alt="facebook"
-            />
-          </button>
-          <button type="button" class="social-btn" id="x-btn">
-            <img
-              src="assets/social-icon/x-icon.svg"
-              class="social-img"
-              alt="x"
-            />
-          </button>
-        </div>
-
-      <section class="login-link-container">
-        <p class="question">
-          Already have an account?
-          <span class="login-link"><a href="">Log in</a></span>
-        </p>
-      </section>
-
-      <section class="img-container">
-        <img class="online-learning-img"/>
-      </section>
+      <div class="img-container">
+        <img src="assets\online-learning-img.svg" alt="Online Learning Illustration"/>
+      </div>
     </main>
   </body>
 </html>

@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #f35640;
-  --secondary-color: #ffffff;
-  --card-bg-color: #ffffff;
-  --background-page: #f3f4f6;
-  --font-color: #111827;
+  --bright-red: #f35640;
+  --white: #ffffff;
+  --pale-blue-gray: #ebebeb;
+  --eerie-black: #111827;
+  --valid-entry: #1cff59;
+  --invalid-entry: red;
   --font-main: "Quicksand", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif;
 }
@@ -12,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--font-color);
+  color: var(--eerie-black);
   font-family: var(--font-main);
 }
 
@@ -21,21 +22,209 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  gap: clamp(0.3rem, 1vw, 1rem);
+  padding: clamp(0.5rem, 2vw, 1.5rem);
+  border-radius: 0.25rem;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-name-container {
+  margin-top: clamp(2rem, 6vw, 5rem);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: clamp(0.3rem, 1vw, 0.8rem);
+}
+
+.signup-msg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-msg-container h1 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: bolder;
+}
+
+.signup-msg-container span {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.2rem, 0.5vw, 0.6rem);
+}
+
+.input-container {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: clamp(2rem, 5vh, 2.5rem);
+  background: var(--pale-blue-gray);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  padding: clamp(0.3rem, 0.8vw, 0.6rem);
+}
+
+input:not(:placeholder-shown):valid {
+  border: 1px solid var(--valid-entry);
+}
+
+input:not(:placeholder-shown):invalid {
+  border: 1px solid var(--invalid-entry);
+}
+
+.signup-btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: clamp(0.5rem, 1vw, 1rem);
+}
+
+button {
+  cursor: pointer;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 2px;
+  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(2.5rem, 6vw, 4.5rem);
+  background: var(--bright-red);
+  color: var(--white);
+  font-weight: bold;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+  background: #d9422f;
+}
+
+.divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  margin: clamp(0.8rem, 2vw, 1.2rem) 0;
+}
+
+.divider-container::before,
+.divider-container::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--eerie-black);
+  margin: 0 clamp(0.5rem, 1vw, 0.8rem);
+}
+
 .social-container {
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: clamp(0.4rem, 1vw, 0.8rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 
 .social-btn {
-  width: 3rem;
-  height: 3rem;
+  width: clamp(2rem, 5vw, 2.5rem);
+  height: clamp(2rem, 5vw, 2.5rem);
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  border-radius: 100%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.social-btn:hover {
+  transform: scale(1.15);
 }
 
 .social-img {
   width: 100%;
 }
 
-.learning-img {
-  height: 50px;
-  width: 50px;
+.login-link-container p {
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+}
+
+.login-link a {
+  color: var(--bright-red);
+  font-weight: bold;
+}
+
+.img-container {
+  display: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    background: var(--pale-blue-gray);
+  }
+
+  .main-container {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    max-width: clamp(400px, 60vw, 600px);
+    padding: clamp(1rem, 2vw, 2rem);
+  }
+
+  .logo-name-container {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    flex-direction: row;
+    max-width: clamp(800px, 80vw, 1000px);
+    padding: clamp(0.5rem, 2vw, 1rem);
+  }
+
+  .signup-container {
+    width: clamp(35%, 40%, 45%);
+  }
+
+  .signup-msg-container {
+    align-items: baseline;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(50%, 60%, 65%);
+    padding: clamp(0.5rem, 1vw, 1rem);
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    object-fit: contain;
+  }
 }
