@@ -16,6 +16,8 @@ See the page here: https://crlbien.github.io/odin-signup-form/
 - Responsive layout 
 
 ## What I Learned
+- How to use Emmet for fast HTML creation
+- What an SVG is and why it is the best image type to use for icons and website images.
 - Understand what is "form" tag in HTML and how it works
 - How to structure a **form** properly using HTML tags like `<form>`, `<label>`, `<input>`, and `<button>`
 - Use **HTML attributes** like `required`, `placeholder`, and `type` for validation
