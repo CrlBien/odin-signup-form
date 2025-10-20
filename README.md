@@ -17,6 +17,7 @@ See the page here: https://crlbien.github.io/odin-signup-form/
 
 ## What I Learned
 - How to use Emmet for fast HTML creation
+- How to use the `:root` selector in CSS to declare global CSS variables.
 - What an SVG is and why it is the best image type to use for icons and website images.
 - Understand what is "form" tag in HTML and how it works
 - How to structure a **form** properly using HTML tags like `<form>`, `<label>`, `<input>`, and `<button>`
